@@ -24,7 +24,7 @@ if (len < 2)
 	fclose(bus.file);
 	free(bus.content);
 	free_stack(*head);
-	exit(EXIT_FAILURE)
+	exit(EXIT_FAILURE);
 }
 h = *head;
 if (h->n == 0)
@@ -39,3 +39,4 @@ aux = h->next->n / h->n;
 h->next->n = aux;
 *head = h->next;
 free(h);
+}
